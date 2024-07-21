@@ -1,25 +1,31 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react'
+import Home from './compoents/home'
+import "react-responsive-carousel/lib/styles/carousel.min.css";
+
+
+import Headerbottom from './compoents/headerbottom';
+import Banner from './compoents/banner';
+
+import Navbar from './compoents/navbar'; 
+
 
 function App() {
+
+
+  
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <Home></Home>
+      <Navbar></Navbar>
+        <Headerbottom></Headerbottom>
+        <Banner></Banner>
+     
+     
+      
+
     </div>
-  );
+  )
 }
 
-export default App;
+export default App
+
